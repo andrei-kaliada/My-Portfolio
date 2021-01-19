@@ -1,13 +1,11 @@
-const hamburgerBtn = document.querySelector(".hamburger"),
-      menu = document.querySelector(".menu"),
-      closeMenuBtn = document.querySelector(".menu__close");
+const hamburger = document.querySelector('.hamburger'),
+      menu = document.querySelector('.menu'),
+      closeElem = document.querySelector('.menu__close');
 
+hamburger.addEventListener('click', () => {
+    menu.classList.add('active');
+});
 
-function toggleMenu(){
-  menu.classList.toggle("active");
-}
-
-
-
-hamburgerBtn.addEventListener('click', toggleMenu);
-closeMenuBtn.addEventListener('click', toggleMenu);
+closeElem.addEventListener('click', () => {
+    menu.classList.remove('active');
+});
