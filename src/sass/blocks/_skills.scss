@@ -1,0 +1,50 @@
+.skills{
+  padding-top: 120px;
+
+
+  &__title{
+    position: relative;
+    text-align: center;
+    @include before_circle;
+
+
+    &:before{
+      top: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+  }
+
+
+  &__subtitle{
+    text-align: center;
+  }
+
+  &__wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(auto,270px));
+    grid-template-rows: repeat(2,135px);
+    gap: 13px;
+  }
+
+ &__element{
+
+  &-img{
+    display: block;
+    margin: 0 auto;
+  }
+
+  &-title{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 14px;
+
+  }
+
+
+ }
+
+
+}
